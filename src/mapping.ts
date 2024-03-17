@@ -1,7 +1,6 @@
 import { BigInt, Address, store } from '@graphprotocol/graph-ts';
 import { Transfer, ERC20 } from '../generated/Balancer/ERC20';
 import { Token, Holder } from '../generated/schema';
-
 function updateBalance(token: Token, holderAddress: Address, value: BigInt, increase: boolean): void {
   if (holderAddress.toHexString() == '0x0000000000000000000000000000000000000000') {
     if (increase) {

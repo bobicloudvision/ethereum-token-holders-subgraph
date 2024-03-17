@@ -5,12 +5,12 @@
     "codegen": "graph codegen",
     "build": "graph build",
     "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ bobicloudvision/ethereum-token-holders",
-    "create-local": "graph create --node http://localhost:8020/ peratx/bsc-token-holders",
-    "remove-local": "graph remove --node http://localhost:8020/ peratx/bsc-token-holders",
+    "create-local": "graph create --node http://localhost:8020/ bobicloudvision/ethereum-token-holders",
+    "remove-local": "graph remove --node http://localhost:8020/ bobicloudvision/ethereum-token-holders",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 bobicloudvision/ethereum-token-holders"
   },
   "dependencies": {
-    "@graphprotocol/graph-cli": "0.17.1",
-    "@graphprotocol/graph-ts": "0.17.0"
+    "@graphprotocol/graph-cli": "^0.68.5",
+    "@graphprotocol/graph-ts": "^0.33.0"
   }
 }

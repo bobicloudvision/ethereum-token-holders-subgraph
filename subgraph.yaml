@@ -1,17 +1,19 @@
-specVersion: 0.0.2
+specVersion: 0.0.5
+description: 'ethereum token holder subgraph'
+repository: https://github.com/graphprotocol/graph-tooling.git
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: Balancer
-    network: ethereum
+    network: mainnet
     source:
-      address: "0x69c66beafb06674db41b22cfc50c34a93b8d82a2"
+      address: "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
       abi: ERC20
       startBlock: 6063002
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.3
+      apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
         - Token
